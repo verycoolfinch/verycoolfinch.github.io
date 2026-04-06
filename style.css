@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    font-family: "Baloo Da 2", sans-serif;
+    background: #F2FCFF;
+}
+
+
+
+
+
+
+
+
+
+
+.topbar {
+    position: sticky;
+    top: 0;
+
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 32px;
+
+    background: #F2FCFF;
+    backdrop-filter: blur(10px);
+
+    border-bottom: 1px solid rgba(15,23,32,0.08);
+
+    z-index: 10;
+}
+
+
+.topbar-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.topbar-logo {
+    height: 28px;
+}
+
+.topbar-title {
+    font-weight: 600;
+    color: #30BAFF;
+}
+
+.topbar-nav {
+    display: flex;
+    gap: 32px;
+}
+
+.topbar-nav a {
+    text-decoration: none;
+    color: #4B5563;
+
+    font-weight: 500;
+
+    transition: color 160ms ease;
+}
+
+.topbar-nav a:hover {
+    color: #30BAFF;
+}
+
+.topbar-right a {
+    text-decoration: none;
+
+    padding: 6px 14px;
+
+    border-radius: 8px;
+
+    background: rgba(48,186,255,0.12);
+    color: #30BAFF;
+
+    font-weight: 500;
+
+    transition: background 160ms ease;
+}
+
+.topbar-right a:hover {
+    background: rgba(48,186,255,0.22);
+}
+
+
+
+
+
+
+
+
+
+
+.hero {
+    position: relative;
+    width: 100%;
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.hero-bg {
+    position: absolute;
+    inset: 0;
+    background: #30BAFF
+}
+
+.logo {
+    width: clamp(160px, 18vw, 320px);
+    height: auto;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+
+    max-width: 1100px;
+    width: 100%;
+    text-align: center;
+}
